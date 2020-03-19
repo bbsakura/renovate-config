@@ -1,0 +1,57 @@
+{
+  "name": "@bbsakura/renovate-config",
+  "version": "1.0.0",
+  "description": "A shareable Renovate config for BBSakura Networks",
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbsakura/renovate-config.git"
+  },
+  "keywords": [
+    "renovate"
+  ],
+  "author": "Yuya Kusakabe <y-kusakabe@bbsakura.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "renovate": "^19.175.0"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": [
+        ":separateMajorReleases",
+        ":combinePatchMinorReleases",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":updateNotScheduled",
+        ":automergeMinor",
+        ":ignoreModulesAndTests",
+        ":maintainLockFilesDisabled",
+        ":autodetectPinVersions",
+        ":prHourlyLimitNone",
+        ":prConcurrentLimit10",
+        "group:monorepos",
+        "group:recommended",
+        ":timezone(Asia/Tokyo)",
+        "schedule:nonOfficeHours",
+        ":label(renovate)"
+      ]
+    },
+    "go": {
+      "extends": [
+        "@bbsakura"
+      ],
+      "postUpdateOptions": [
+        "gomodTidy"
+      ]
+    },
+    "npm": {
+      "extends": [
+        "@bbsakura",
+        "helpers:disableTypesNodeMajor"
+      ]
+    }
+  }
+}
