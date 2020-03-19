@@ -31,7 +31,7 @@
         ":maintainLockFilesDisabled",
         ":autodetectPinVersions",
         ":prHourlyLimitNone",
-        ":prConcurrentLimit10",
+        ":prConcurrentLimit1",
         "group:monorepos",
         "group:recommended",
         ":timezone(Asia/Tokyo)",
