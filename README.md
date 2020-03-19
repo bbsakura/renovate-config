@@ -22,7 +22,7 @@ A sharable Renovate config for BBSakura Networks.
 }
 ```
 
-* `go`
+* `npm`
 
 ```json
 {
