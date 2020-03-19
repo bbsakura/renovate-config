@@ -1,6 +1,6 @@
 {
   "name": "@bbsakura/renovate-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A shareable Renovate config for BBSakura Networks",
   "scripts": {
     "test": "renovate-config-validator"
@@ -31,13 +31,13 @@
         ":maintainLockFilesDisabled",
         ":autodetectPinVersions",
         ":prHourlyLimitNone",
-        ":prConcurrentLimit1",
         "group:monorepos",
         "group:recommended",
         ":timezone(Asia/Tokyo)",
         "schedule:nonOfficeHours",
         ":label(renovate)"
-      ]
+      ],
+      ":prConcurrentLimit": 1
     },
     "go": {
       "extends": [
