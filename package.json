@@ -37,7 +37,7 @@
         "schedule:nonOfficeHours",
         ":label(renovate)"
       ],
-      ":prConcurrentLimit": 1
+      "prConcurrentLimit": 1
     },
     "go": {
       "extends": [
