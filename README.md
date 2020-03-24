@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40bbsakura%2Frenovate-config.svg)](https://badge.fury.io/js/%40bbsakura%2Frenovate-config)
 
-A sharable Renovate config for BBSakura Networks.
+[Renovate Shareable Config Presets](https://docs.renovatebot.com/config-presets/) for BBSakura Networks.
 
 ## Usage
 
