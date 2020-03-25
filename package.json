@@ -51,7 +51,8 @@
       "extends": [
         "@bbsakura",
         "helpers:disableTypesNodeMajor"
-      ]
+      ],
+      "bumpVersion": "patch"
     }
   }
 }
