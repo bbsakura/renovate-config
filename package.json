@@ -27,6 +27,7 @@
         ":semanticPrefixFixDepsChoreOthers",
         ":updateNotScheduled",
         ":automergeMinor",
+        ":automergeDigest",
         ":ignoreModulesAndTests",
         ":maintainLockFilesDisabled",
         ":autodetectPinVersions",
