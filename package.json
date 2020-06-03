@@ -1,6 +1,6 @@
 {
   "name": "@bbsakura/renovate-config",
-  "version": "1.0.104",
+  "version": "1.1.0",
   "description": "A shareable Renovate config for BBSakura Networks",
   "scripts": {
     "test": "renovate-config-validator"
@@ -38,7 +38,10 @@
         "schedule:nonOfficeHours",
         ":label(renovate)"
       ],
-      "prConcurrentLimit": 1
+      "prConcurrentLimit": 1,
+      "baseBranches": [
+        "dev"
+      ]
     },
     "go": {
       "extends": [
