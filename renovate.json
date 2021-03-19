@@ -1,3 +1,6 @@
 {
-  "extends": ["@bbsakura:npm"]
+  "extends": ["@bbsakura:npm"],
+  "baseBranches": [
+    "master"
+  ]
 }
