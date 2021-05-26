@@ -1,6 +1,6 @@
 {
   "name": "@bbsakura/renovate-config",
-  "version": "1.1.48",
+  "version": "1.1.49",
   "description": "A shareable Renovate config for BBSakura Networks",
   "scripts": {
     "test": "renovate-config-validator"
@@ -15,7 +15,7 @@
   "author": "Yuya Kusakabe <y-kusakabe@bbsakura.net>",
   "license": "MIT",
   "devDependencies": {
-    "renovate": "25.31.8"
+    "renovate": "25.31.9"
   },
   "renovate-config": {
     "default": {
