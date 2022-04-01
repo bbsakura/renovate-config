@@ -15,7 +15,7 @@
   "author": "Yuya Kusakabe <y-kusakabe@bbsakura.net>",
   "license": "MIT",
   "devDependencies": {
-    "renovate": "31.27.1"
+    "renovate": "31.29.0"
   },
   "renovate-config": {
     "default": {
