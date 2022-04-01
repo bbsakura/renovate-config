@@ -24,6 +24,7 @@
         ":combinePatchMinorReleases",
         ":ignoreUnstable",
         ":prImmediately",
+        ":semanticCommits",
         ":semanticPrefixFixDepsChoreOthers",
         ":updateNotScheduled",
         ":automergeMinor",
