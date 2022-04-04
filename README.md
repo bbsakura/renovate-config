@@ -1,32 +1,25 @@
-# @bbsakura/renovate-config
-
-[![npm version](https://badge.fury.io/js/%40bbsakura%2Frenovate-config.svg)](https://badge.fury.io/js/%40bbsakura%2Frenovate-config)
+# bbsakura/renovate-config
 
 [Renovate Shareable Config Presets](https://docs.renovatebot.com/config-presets/) for BBSakura Networks.
 
 ## Usage
 
-* `default`
-
 ```json
 {
-  "extends": ["@bbsakura"]
+  "extends": [
+    "github>bbsakura/renovate-config"
+  ]
 }
 ```
 
-* `go`
+- If you want to change the target branch to `dev`.
 
 ```json
 {
-  "extends": ["@bbsakura:go"]
-}
-```
-
-* `npm`
-
-```json
-{
-  "extends": ["@bbsakura:npm"]
+  "extends": [
+    "github>bbsakura/renovate-config"
+    "github>bbsakura/renovate-config:baseBranchDev"
+  ]
 }
 ```
 

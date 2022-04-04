@@ -1,0 +1,30 @@
+{
+  "extends": [
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    ":prHourlyLimitNone",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all",
+    ":semanticCommits",
+    ":separateMultipleMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":semanticCommits",
+    ":updateNotScheduled",
+    ":automergeMinor",
+    ":automergeDigest",
+    ":maintainLockFilesDisabled",
+    ":timezone(Asia/Tokyo)",
+    "schedule:nonOfficeHours",
+    ":label(renovate)",
+    "helpers:disableTypesNodeMajor"
+  ],
+  "prConcurrentLimit": 1,
+  "postUpdateOptions": [
+    "gomodTidy"
+  ]
+}

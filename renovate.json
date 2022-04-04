@@ -1,6 +1,5 @@
 {
-  "extends": ["@bbsakura:npm"],
-  "baseBranches": [
-    "master"
+  "extends": [
+    "github>bbsakura/renovate-config"
   ]
 }
