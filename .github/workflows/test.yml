@@ -28,4 +28,7 @@ jobs:
         path: ~/.npm
         key: ${{ runner.os }}-node
     - name: Validate ${{ matrix.config }}
-      run: RENOVATE_CONFIG_FILE=${{ matrix.config }} npx --package renovate -c 'renovate-config-validator'
+      env:
+        # Mirror the allowedEnv that Mend-hosted Renovate sets via global:safeEnv
+        RENOVATE_ALLOWED_ENV: '["GO*"]'
+      run: npx --package renovate -c 'renovate-config-validator --no-global ${{ matrix.config }}'
