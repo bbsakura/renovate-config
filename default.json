@@ -26,5 +26,8 @@
   "prConcurrentLimit": 1,
   "postUpdateOptions": [
     "gomodTidy"
-  ]
+  ],
+  "env": {
+    "GOPRIVATE": "github.com/bbsakura/*"
+  }
 }
